@@ -1,0 +1,36 @@
+# Compiled source #
+###################
+*.dcu
+*.obj
+*.exe
+*.bpl
+*.lib
+*.bpi
+
+# Other generated files
+###################
+*.rsm
+*.map
+
+# Backup files    #
+###################
+*.~*
+
+# IDE Files	  #
+###################
+*.dproj.local
+*.groupproj.local
+*.identcache
+*.dsk
+*.tvsconfig
+*.otares
+
+# DUnit #
+dunit.ini
+
+# Output Folders  #
+###################
+/Win32
+/Win64
+/__history
+/Tests/__history
