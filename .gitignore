@@ -6,6 +6,7 @@
 *.bpl
 *.lib
 *.bpi
+*.res
 
 # Other generated files
 ###################
