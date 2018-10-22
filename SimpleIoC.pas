@@ -188,9 +188,9 @@ begin
 
   pInfo := TypeInfo(TInterface);
   if newName = '' then
-    key := string(pInfo.Name)
+    key := pInfo.Name.ToString
   else
-    key := string(pInfo.Name) + '_' + newName;
+    key := pInfo.Name.ToString + '_' + newName;
   key := LowerCase(key);
 
   if not FContainerInfo.TryGetValue(key,o) then
@@ -264,7 +264,7 @@ var
 begin
   //By default the key is the interface name unless otherwise found.
   pInfo := TypeInfo(TInterface);
-  result := string(pInfo.Name);
+  result := pInfo.Name.ToString;
 
   if (AName <> '') then
     result := result + '_' + AName;
